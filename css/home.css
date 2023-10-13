@@ -1,0 +1,34 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 2000px;
+}
+
+.scroll_to_top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: rgba(51, 51, 51, 0.85);
+  color: #fff;
+  z-index: 300;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  display: none;
+  transition: 0.5s all ease-in-out;
+}
+
+.hello {
+  color: #2653AB;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  .hello {
+    color: red;
+  }
+}/*# sourceMappingURL=home.css.map */

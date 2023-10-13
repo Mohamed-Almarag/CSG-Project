@@ -1,0 +1,28 @@
+@import "../helpers//variables";
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 2000px;
+}
+
+
+// Scroll To Top Button
+.scroll_to_top{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: rgba($title_color, .85);
+  color: $white;
+  z-index: 300;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  display: none;
+  transition: $transiton;
+
+}

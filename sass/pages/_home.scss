@@ -1,0 +1,7 @@
+
+.hello{
+  color: $main_color;
+  @media #{$navbartoggler} {
+    color: red;
+  }
+}

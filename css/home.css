@@ -4,7 +4,19 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  height: 2000px;
+}
+
+::selection {
+  background-color: #2653AB;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2653AB;
 }
 
 .scroll_to_top {
@@ -24,11 +36,159 @@ body {
   transition: 0.5s all ease-in-out;
 }
 
-.hello {
+.main_app_section_title .title {
   color: #2653AB;
+  margin-bottom: 0;
+  font-size: 36px;
+  font-weight: bold;
 }
-@media (min-width: 320px) and (max-width: 991px) {
-  .hello {
-    color: red;
-  }
+.main_app_section_title .text_title {
+  color: #9B9B9B;
+  font-weight: 300;
+  line-height: 32px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.main_app_header {
+  background-color: #fff;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.hero_section_wrapper {
+  height: 100vh;
+  position: relative;
+}
+.hero_section_wrapper .img {
+  max-height: 100%;
+}
+
+.about_us_wrapper {
+  padding: 70px 0;
+}
+.about_us_wrapper .img_container {
+  display: flex;
+  justify-content: end;
+}
+.about_us_wrapper .img_container .img {
+  max-width: 475px;
+  width: 100%;
+  max-height: 444px;
+}
+.about_us_wrapper .about_content {
+  margin-top: 30px;
+}
+.about_us_wrapper .about_content .texts {
+  color: #333333;
+  line-height: 32px;
+  font-size: 15px;
+}
+
+.main_app_footer .main_footer_content {
+  padding: 70px 0;
+  background-image: url("../../images//icons/footer.png");
+  background-size: cover;
+}
+.main_app_footer .main_footer_content .text {
+  color: #9E9E9E;
+}
+.main_app_footer .main_footer_content .title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.main_app_footer .main_footer_content .title.contact_title {
+  color: #FFBA30;
+  font-size: 25px;
+}
+.main_app_footer .main_footer_content .get_in_touch {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.main_app_footer .main_footer_content .footer_content .footer_form .input_wrapper {
+  margin-bottom: 15px;
+}
+.main_app_footer .main_footer_content .footer_content .footer_form .input_wrapper.for_answer {
+  width: 60px;
+  margin-bottom: 0;
+}
+.main_app_footer .main_footer_content .footer_content .footer_form .form_input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #9E9E9E;
+  background: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  height: 48px;
+}
+.main_app_footer .main_footer_content .footer_content .footer_form .form_input::placeholder {
+  color: #9E9E9E;
+}
+.main_app_footer .main_footer_content .footer_content .footer_form .form_input.text_area {
+  height: 120px;
+  resize: none;
+}
+.main_app_footer .main_footer_content .footer_content .footer_form .form_action {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.main_app_footer .main_footer_content .footer_content .footer_form .form_action .write_answer {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main_app_footer .main_footer_content .footer_content .footer_form .form_action .write_answer .the_question {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main_app_footer .main_footer_content .footer_content input[type=number]::-webkit-outer-spin-button,
+.main_app_footer .main_footer_content .footer_content input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.main_app_footer .main_footer_content .footer_content .submit_button {
+  min-width: 150px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #2653AB;
+  color: #fff;
+  border: 1px solid #2653AB;
+  border-radius: 5px;
+}
+.main_app_footer .main_footer_content .footer_content .contacts .info_list .info_item {
+  display: flex;
+  color: #fff;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+.main_app_footer .main_footer_content .footer_content .contacts .info_list .info_item .info_wrapper {
+  font-size: 14px;
+}
+.main_app_footer .main_footer_content .footer_content .contacts .info_list .info_item .info_wrapper .link {
+  text-decoration: none;
+  color: #fff;
+}
+.main_app_footer .copyright_container {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 10px;
+  color: #807272;
+}
+.main_app_footer .copyright_container .website_link {
+  color: #2653AB;
+  font-weight: 500;
+  text-decoration: none;
 }/*# sourceMappingURL=home.css.map */

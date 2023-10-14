@@ -1,7 +1,34 @@
-
-.hello{
-  color: $main_color;
-  @media #{$navbartoggler} {
-    color: red;
+// Start Hero Section
+.hero_section_wrapper {
+  // background-image: url('../../images/pages/header.png');
+  height: 100vh;
+  position: relative;
+  // background-size: cover;
+  .img {
+    max-height: 100%;
   }
 }
+// End Hero Section
+
+// Start About Us
+.about_us_wrapper{
+  padding: $main_padding 0;
+  .img_container{
+    display: flex;
+    justify-content: end;
+    .img{
+      max-width: 475px;
+      width: 100%;
+      max-height: 444px;
+    }
+  }
+  .about_content{
+    margin-top: 30px;
+    .texts{
+      color: $title_color;
+      line-height: $main_line_height;
+      font-size: $p_font_sizepx;
+    }
+  }
+}
+// End About Us

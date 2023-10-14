@@ -2,13 +2,23 @@
 $main_color: #2653AB;
 $second_color: #FFBA30;
 $title_color: #333333;
+$title_text_color: #9B9B9B;
 $bg_color: #9E9E9E;
 $white: #fff;
 $black:#000;
+$footer_bg_color:#f9f9f9;
+$footer_color:#807272;
+
+// Another Variables For Style
+$main_padding: 70px;
+$radius: 5px;
+$main_line_height: 32px;
+$p_font_size: 15px;
 
 $simple-shadow: 0 0 6px 0 rgba($black, 0.2), 0 0 5px -2px rgba($black, 0.1);
 $transiton: 0.5s all ease-in-out;
 $box-shadow: 0 1px 12px rgba($black, 0.4);
 $shadow:0 4px 4px 0 rgba($black, .15);
-$main_padding: 70px;
+
+// Media And Responsive Variables
 $navbartoggler: "(min-width: 320px) and (max-width: 991px)";

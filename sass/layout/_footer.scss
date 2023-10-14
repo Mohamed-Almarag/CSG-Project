@@ -1,0 +1,122 @@
+.main_app_footer{
+  .main_footer_content {
+    
+    padding: $main_padding 0;
+    background-image: url("../../images//icons/footer.png");
+    background-size: cover;
+    .text {
+      color: $bg_color;
+    }
+    .title {
+      color: $white;
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      &.contact_title{
+        color: $second_color;
+        font-size: 25px;
+      }
+    }
+    .get_in_touch {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .footer_content {
+      .footer_form {
+        .input_wrapper {
+          margin-bottom: 15px;
+          &.for_answer{
+            width: 60px;
+            margin-bottom: 0;
+          }
+        }
+        .form_input {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid $bg_color;
+          background: none;
+          outline: none;
+          color: $white;
+          border-radius: $radius;
+          height: 48px;
+          &::placeholder {
+            color: $bg_color;
+          }
+          &.text_area{
+            height: 120px;
+            resize: none;
+          }
+        }
+        .form_action{
+          display: flex;
+          justify-content: space-between;
+          margin-top: 10px;
+          .write_answer{
+            color: $white;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .the_question{
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+          }
+        }
+      }
+      input[type="number"]::-webkit-outer-spin-button,
+      input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+      .submit_button{
+        min-width: 150px;
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        background-color: $main_color;
+        color: $white;
+        border: 1px solid $main_color;
+        border-radius: $radius;
+      }
+      // Contact Us
+      .contacts{
+     .info_list{
+     
+      .info_item{
+        display: flex;
+        color: $white;
+        gap: 10px;
+        align-items: center;
+        margin-top: 20px;
+        .info_wrapper{
+          font-size: 14px;
+          .link{
+            text-decoration: none;
+            color: $white;
+          }
+        }
+      }
+     }
+      }
+    }
+  }
+  .copyright_container{
+    background-color: $footer_bg_color;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 10px;
+    color: $footer_color;
+    
+    .website_link{
+      color: $main_color;
+      font-weight: 500;
+      text-decoration: none;
+    }
+  }
+}

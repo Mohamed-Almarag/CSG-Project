@@ -33,14 +33,10 @@ body {
   bottom: 30px;
   right: 30px;
   background-color: rgba($title_color, 0.85);
-  color: $white;
-  z-index: 300;
+  z-index: 500;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  line-height: 40px;
-  text-align: center;
-  font-size: 18px;
   display: none;
   transition: $transiton;
 }
@@ -59,7 +55,67 @@ body {
     margin: 0;
     font-size: 20px;
   }
+
+  &.what_we_do {
+    text-align: center;
+    .title {
+      color: $title_color;
+    }
+  }
+  &.cases {
+    
+    .title {
+      color: $title_color;
+    }
+  }
+  &.team {
+    text-align: center;
+    .title,
+    .text_title {
+      color: $white;
+    }
+  }
 }
+
+// Global Link Style
+.global_button_link {
+  color: $white;
+  background-color: $main_color;
+  width: 154px;
+  height: 48px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: $transiton;
+  text-transform: uppercase;
+  font-weight: 500;
+  &:hover {
+    opacity: 0.8;
+    color: $white;
+  }
+  &.is_job{
+    min-width: 220px;
+    margin: 20px auto 0;
+  }
+}
+
+.global_view_all_items{
+  
+  transition: $transiton;
+  font-size: 17px;
+  font-weight: 500;
+  .link{
+    color: $main_color;
+    text-decoration: none;
+  }
+  &:hover{
+    transform: translateX(8px);
+    color: $main_color;
+  }
+}
+
 
 // media
 //   @media #{$navbartoggler} {

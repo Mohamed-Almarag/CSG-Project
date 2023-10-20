@@ -7,8 +7,12 @@ $bg_color: #9E9E9E;
 $white: #fff;
 $black:#000;
 $footer_bg_color:#f9f9f9;
+$footer_bg_color:#f9f9f9;
+$we_do_bg_color:#F5F5F6;
+$case_bg_color:#28293E;
 $footer_color:#807272;
-
+$margin_from_top_page: 90px;
+$arrow_bg_color:#f1f1f1;
 // Another Variables For Style
 $main_padding: 70px;
 $radius: 5px;
@@ -18,7 +22,7 @@ $p_font_size: 15px;
 $simple-shadow: 0 0 6px 0 rgba($black, 0.2), 0 0 5px -2px rgba($black, 0.1);
 $transiton: 0.5s all ease-in-out;
 $box-shadow: 0 1px 12px rgba($black, 0.4);
-$shadow:0 4px 4px 0 rgba($black, .15);
+$shadow:0 2px 17px 0 rgba($black, .1);
 
 // Media And Responsive Variables
 $navbartoggler: "(min-width: 320px) and (max-width: 991px)";

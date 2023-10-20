@@ -2,6 +2,8 @@
 .main_app_header{
   background-color: $white;
   // box-shadow: 0 0 7px 5px rgba($black, 0.15);
-  box-shadow: 0 2px 2px -2px rgba($black,.2);
+  // box-shadow: 0 2px 2px -2px rgba($black,.2);
+  background-image: url('../../images/icons/nav\ bar.png');
+  background-size: cover;
 
 }

@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Partners</title>
+    <title>Jobs</title>
     <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
     />
-    <!-- <link rel="stylesheet" href=".//css//home.css" /> -->
+    <link rel="stylesheet" href=".//css/jobs.css" />
   </head>
+
   <body>
     <!-- Start Navbar -->
     <header class="main_app_header fixed-top">
@@ -54,7 +56,9 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
                   <li>
                     <a class="dropdown-item" href="#">Something else here</a>
                   </li>
@@ -75,6 +79,141 @@
       </nav>
     </header>
     <!-- End Navbar -->
+
+    <!-- Start Jobs -->
+    <section class="jobs_wrapper apply_job_details">
+      <div class="container">
+        <div class="main_app_section_title text-center">
+          <h2 class="title">Apply on this job</h2>
+          <p class="text_title">
+            Only fill this form and we will contact with you
+          </p>
+        </div>
+
+        <div class="apply_job">
+          <div class="wrap">
+            <div class="job_icon">
+              <img src="images/icons/job.png" alt="job" class="img" />
+            </div>
+            <h4 class="position">Sales Manager</h4>
+          </div>
+          <div class="time_years">
+            <div class="part">
+              <img src="images/icons/timer-broken.png" alt="status" />
+              <span class="d-block">Full Time</span>
+            </div>
+            <div class="part">
+              <img src="images/icons/exp.png" alt="Experience" />
+              <span class="d-block">3-5 Years Experience</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Start Apply Job Form -->
+        <form action="" class="apply_job_form">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="input_wrapper">
+                <input
+                  class="apply_input"
+                  type="text"
+                  placeholder="First Name"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="input_wrapper">
+                <input
+                  class="apply_input"
+                  type="text"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="input_wrapper">
+                <input
+                  class="apply_input"
+                  type="number"
+                  placeholder="Phone Number"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="input_wrapper">
+                <input
+                  class="apply_input"
+                  type="number"
+                  placeholder="Phone Number 2"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="input_wrapper">
+                <input
+                  class="apply_input"
+                  type="email"
+                  placeholder="Email Address"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="input_wrapper">
+                <input
+                  class="apply_input"
+                  type="number"
+                  placeholder="How much experience do you have?"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="input_wrapper">
+                <input
+                  class="apply_input"
+                  type="text"
+                  placeholder="Governorate"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="input_wrapper">
+                <input class="apply_input" type="text" placeholder="City" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="input_wrapper">
+                <input
+                  class="apply_input"
+                  type="text"
+                  placeholder="Your Address"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="input_wrapper apply_file_input">
+                <label for="pdf_file" class="file_label" role="button">
+                  <img src="images/icons/upload.png" alt="upload" />
+                  <span
+                    >Drag the file or click on the box To attach your CV
+                    <span class="pdf_only">PDF Format Only</span>
+                  </span>
+                </label>
+                <input
+                  id="pdf_file"
+                  class="apply_input apply_file"
+                  type="file"
+                  accept="application/pdf"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button class="submit_button" type="submit">Send</button>
+        </form>
+        <!-- End Apply Job Form -->
+      </div>
+    </section>
+    <!-- End Jobs -->
 
     <!-- Start Footer -->
     <img

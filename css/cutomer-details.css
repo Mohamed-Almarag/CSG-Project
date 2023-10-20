@@ -105,234 +105,35 @@ body {
   background-size: cover;
 }
 
-.hero_section_wrapper {
-  height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hero_section_wrapper .img {
-  max-height: 100%;
-}
-
-.about_us_wrapper {
+.case_studies_details {
   padding: 70px 0;
+  margin-top: 90px;
 }
-.about_us_wrapper .img_container {
-  display: flex;
-  justify-content: end;
-}
-.about_us_wrapper .img_container .img {
-  max-width: 475px;
-  width: 100%;
-  max-height: 444px;
-}
-.about_us_wrapper .about_content {
-  margin-top: 30px;
-}
-.about_us_wrapper .about_content .texts {
-  color: #333333;
-  line-height: 32px;
-  font-size: 15px;
-}
-
-.what_we_do_wrapper {
-  padding-bottom: 70px;
-}
-.what_we_do_wrapper .every_do {
-  background-color: #F5F5F6;
-  border-radius: 32px;
-  padding: 30px;
+.case_studies_details .main_case_content {
   margin-top: 30px;
   display: flex;
-  align-items: center;
   gap: 30px;
-  min-height: 200px;
 }
-.what_we_do_wrapper .every_do .title {
+.case_studies_details .main_case_content .image_wrapper .img {
+  width: 444px;
+  max-width: 444px;
+  height: 450px;
+  max-height: 450px;
+}
+.case_studies_details .main_case_content .content .title {
   color: #333333;
+  font-size: 36px;
   font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 10px;
+  line-height: 72px;
 }
-.what_we_do_wrapper .every_do .title.with_color {
-  color: #2653AB;
-}
-.what_we_do_wrapper .every_do .dexcription {
+.case_studies_details .main_case_content .content .text {
   line-height: 32px;
-  font-size: 15px;
-  margin: 0;
-  color: #9E9E9E;
-}
-
-.our_team_wrapper {
-  padding: 70px 0;
-  margin: 70px 0;
-  background-image: url("../../images/icons/team.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.our_team_wrapper .all_team_members {
-  margin-top: 50px;
-}
-.our_team_wrapper .all_team_members .team_card .img_wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.our_team_wrapper .all_team_members .team_card .img_wrapper .dashed_border {
-  position: absolute;
-}
-.our_team_wrapper .all_team_members .team_card .img_wrapper .member_img {
-  display: block;
-  width: 152px;
-  height: 152px;
-  border-radius: 50%;
-}
-.our_team_wrapper .all_team_members .team_card .content {
-  color: #fff;
-  text-align: center;
-}
-.our_team_wrapper .all_team_members .team_card .content .name {
-  margin: 20px 0 5px;
-  font-size: 20px;
-  line-height: 30px;
-}
-.our_team_wrapper .all_team_members .team_card .content .job {
+  color: #9B9B9B;
   font-size: 18px;
-  margin-bottom: 5px;
-}
-.our_team_wrapper .all_team_members .team_card .content .info {
-  line-height: 32px;
-  font-size: 15px;
   margin: 0;
-  color: rgba(255, 255, 255, 0.7);
 }
-
-.banking_consultancy_wrapper {
-  padding-bottom: 70px;
-}
-.banking_consultancy_wrapper .banking_content {
-  margin-top: 30px;
-}
-
-.case_studies_wrapper {
-  padding-bottom: 70px;
-}
-.case_studies_wrapper .all_case_studies {
-  margin-top: 30px;
-}
-.case_studies_wrapper .all_case_studies .every_case {
-  position: relative;
-  overflow: hidden;
-  transition: 0.5s all ease-in-out;
-  max-height: 550px;
-  border-radius: 32px;
-  width: 400px;
-  margin: 0 auto 30px;
-}
-.case_studies_wrapper .all_case_studies .every_case .image_wrapper {
-  overflow: hidden;
-}
-.case_studies_wrapper .all_case_studies .every_case .image_wrapper .img {
-  display: block;
-  width: 100%;
-  border-radius: 32px;
-  transition: 0.5s all ease-in-out;
-}
-.case_studies_wrapper .all_case_studies .every_case .case_content {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 20px 20px;
-  background-color: rgba(40, 41, 62, 0.5);
-  border-bottom-left-radius: 32px;
-  border-bottom-right-radius: 32px;
-  color: #fff;
-  transition: 0.5s all ease-in-out;
-  opacity: 0;
-}
-.case_studies_wrapper .all_case_studies .every_case .case_content .title {
-  margin: 0;
-  font-size: 20px;
-  line-height: 32px;
-}
-.case_studies_wrapper .all_case_studies .every_case .case_content .text {
-  line-height: 20px;
-  font-size: 13px;
-  margin: 10px 0 15px;
-}
-.case_studies_wrapper .all_case_studies .every_case:hover .case_content {
-  opacity: 1;
-}
-.case_studies_wrapper .all_case_studies .every_case:hover .img {
-  filter: brightness(0.7);
-  transform: scale(1.1);
-}
-
-.jobs_wrapper {
-  padding: 70px 0;
-  background-color: #F5F5F6;
-}
-.jobs_wrapper .all_jobs {
-  margin-top: 30px;
-}
-.jobs_wrapper .all_jobs .every_job {
-  background-color: #fff;
-  border-radius: 32px;
-  padding: 20px;
-  display: flex;
-  gap: 20px;
-  min-height: 170px;
+.case_studies_details .main_case_content .content .text.with_margin {
   margin-bottom: 30px;
-}
-.jobs_wrapper .all_jobs .every_job .job_icon {
-  background-color: rgba(38, 83, 171, 0.2);
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  border-radius: 21px;
-  opacity: 0.5;
-}
-.jobs_wrapper .all_jobs .every_job .job_icon .img {
-  width: 33px;
-  height: 33px;
-}
-.jobs_wrapper .all_jobs .every_job .job_content {
-  flex-grow: 1;
-}
-.jobs_wrapper .all_jobs .every_job .job_content .position {
-  font-size: 20px;
-  margin: 0;
-  line-height: 30px;
-}
-.jobs_wrapper .all_jobs .every_job .job_content .status {
-  display: flex;
-  gap: 10px;
-}
-.jobs_wrapper .all_jobs .every_job .job_content .status.for_margin {
-  margin: 15px 0;
-}
-.jobs_wrapper .all_jobs .every_job .job_content .with_arrow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.jobs_wrapper .all_jobs .every_job .job_content .with_arrow .arrow_link {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-  background-color: #f1f1f1;
-  transition: 0.5s all ease-in-out;
-}
-.jobs_wrapper .all_jobs .every_job .job_content .with_arrow .arrow_link:hover {
-  background-color: #2653AB;
 }
 
 .main_app_footer .main_footer_content {
@@ -442,4 +243,4 @@ body {
   color: #2653AB;
   font-weight: 500;
   text-decoration: none;
-}/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=cutomer-details.css.map */

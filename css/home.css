@@ -211,11 +211,99 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.our_services_wrapper {
+  padding-bottom: 70px;
+}
+.our_services_wrapper .nav-tabs {
+  margin-top: 30px;
+  justify-content: center !important;
+  border: none;
+  gap: 30px;
+}
+.our_services_wrapper .nav-tabs .nav-item .nav-link {
+  border: 1px solid #adadad;
+  color: #adadad;
+  border-radius: 5px;
+  transition: 0.5s all ease-in-out;
+}
+.our_services_wrapper .nav-tabs .nav-item .nav-link.active, .our_services_wrapper .nav-tabs .nav-item .nav-link:hover {
+  background-color: #FFBA30;
+  border-color: #FFBA30;
+  color: #fff;
+}
+.our_services_wrapper .tab-content {
+  margin-top: 30px;
+}
+.our_services_wrapper .tab-content .all_services_cards .every_service {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s all ease-in-out;
+}
+.our_services_wrapper .tab-content .all_services_cards .every_service .img_wrapper .img {
+  width: 262px;
+  height: 202px;
+  display: block;
+  margin: auto;
+  transition: 0.5s all ease-in-out;
+}
+.our_services_wrapper .tab-content .all_services_cards .every_service .content {
+  padding: 10px 0;
+  text-align: center;
+}
+.our_services_wrapper .tab-content .all_services_cards .every_service .content .title {
+  color: #333333;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 27px;
+  margin-top: 15px;
+}
+.our_services_wrapper .tab-content .all_services_cards .every_service .content .description {
+  line-height: 20px;
+  margin: 15px 0 20px;
+  font-size: 12px;
+  color: #9B9B9B;
+}
+.our_services_wrapper .tab-content .all_services_cards .every_service:hover {
+  box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.1);
+}
+.our_services_wrapper .tab-content .all_services_cards .every_service:hover .img_wrapper .img {
+  filter: brightness(0.85);
+}
+
 .banking_consultancy_wrapper {
   padding-bottom: 70px;
 }
 .banking_consultancy_wrapper .banking_content {
   margin-top: 30px;
+}
+.banking_consultancy_wrapper .banking_content .content .title {
+  color: #333333;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.banking_consultancy_wrapper .banking_content .content .dexcription {
+  line-height: 32px;
+  font-size: 17px;
+  margin: 0;
+  color: #9E9E9E;
+}
+.banking_consultancy_wrapper .banking_content .content .title_two {
+  color: #9B9B9B;
+  font-size: 20px;
+  margin: 20px 0;
+}
+.banking_consultancy_wrapper .banking_content .content .tags_list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.banking_consultancy_wrapper .banking_content .content .tags_list .every_item {
+  background-color: #F5F5F6;
+  color: #2653AB;
+  padding: 10px 30px;
+  border-radius: 25px;
 }
 
 .case_studies_wrapper {
@@ -333,6 +421,38 @@ body {
 }
 .jobs_wrapper .all_jobs .every_job .job_content .with_arrow .arrow_link:hover {
   background-color: #2653AB;
+}
+
+.partners_wrapper {
+  padding: 70px 0;
+}
+.partners_wrapper .all_partners {
+  margin: 30px 0;
+}
+.partners_wrapper .all_partners .every_partner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.partners_wrapper .all_partners .every_partner .img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: block;
+  box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.1);
+}
+.partners_wrapper .all_partners .every_partner .content .title {
+  color: #333333;
+  font-weight: bold;
+  font-size: 20px;
+}
+.partners_wrapper .all_partners .every_partner .content .description {
+  line-height: 20px;
+  font-size: 13px;
+  margin: 10px 0;
+  color: #9E9E9E;
+  max-width: 90%;
+  width: 100%;
 }
 
 .main_app_footer .main_footer_content {

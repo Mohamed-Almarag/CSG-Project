@@ -124,9 +124,10 @@ body {
 }
 
 .main_app_header {
-  background-image: url("../../images/icons/nav bar.png");
   background-size: cover;
   background-color: #fff;
+  background-image: url("../../images/icons/nav bar.png");
+  background-image: url("../../images/icons/nav bar.png"), linear-gradient(to right, #b8c2d7, #C1CADA, #E8DDC5);
 }
 .main_app_header .main_nav_wrappr .navbar-nav {
   flex-grow: 1;

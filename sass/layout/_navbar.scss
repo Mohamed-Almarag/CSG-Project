@@ -1,8 +1,9 @@
 // Style For Main Application Header - Navbar
 .main_app_header {
-  background-image: url("../../images/icons/nav\ bar.png");
   background-size: cover;
   background-color: $white;
+  background-image: url("../../images/icons/nav\ bar.png");
+  background-image: url("../../images/icons/nav\ bar.png"), linear-gradient(to right, #b8c2d7 , #C1CADA, #E8DDC5);
   .main_nav_wrappr {
     .navbar-nav {
       flex-grow: 1;

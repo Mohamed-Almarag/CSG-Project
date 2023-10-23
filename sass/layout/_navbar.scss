@@ -1,19 +1,29 @@
 // Style For Main Application Header - Navbar
 .main_app_header {
-  // background-color: rgba($white, .5);
   background-image: url("../../images/icons/nav\ bar.png");
   background-size: cover;
-  .main_nav_wrappr{
-    .navbar-nav{
+  background-color: $white;
+  .main_nav_wrappr {
+    .navbar-nav {
       flex-grow: 1;
       justify-content: center;
-      .nav-item{
+      .nav-item {
         padding: 0 5px;
-        .nav-link{
+        @media (min-width:992px) and (max-width:1300px) {
+          padding: 0;
+        }
+        @media #{$meduim} {
+          margin-bottom: 10px;
+        }
+        .nav-link {
           color: $title_color;
           font-weight: 400;
           font-size: 16px;
-          &.active{
+          padding: 0 5px;
+          @media (min-width:992px) and (max-width:1200px) {
+            font-size: 13px;
+          }
+          &.active {
             color: $main_color;
             font-weight: 600;
           }
@@ -24,31 +34,43 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      .contact_link{
+      .contact_link {
         display: flex;
         align-items: center;
         color: $title_color;
         text-decoration: none;
         gap: 5px;
+        font-size: 16px;
+          @media (min-width:992px) and (max-width:1200px) {
+            font-size: 13px;
+          }
       }
-      .change_language_dropdown{
-        .language_btn{
+      .change_language_dropdown {
+        .language_btn {
           box-shadow: none;
           border-radius: 10px;
           background-color: rgba($case_bg_color, 0.1);
-          &::after{
+          &::after {
             display: none;
+          }
+          font-size: 16px;
+          @media (min-width:992px) and (max-width:1200px) {
+            font-size: 13px;
           }
         }
       }
-      .dropdown_menu_language{
+      .dropdown_menu_language {
         border: none;
         min-width: 5rem;
         border-radius: 10px;
-        .dropdown-item{
+        .dropdown-item {
           transition: $transiton;
           text-align: center;
-          &:hover{
+          font-size: 16px;
+          @media (min-width:992px) and (max-width:1200px) {
+            font-size: 13px;
+          }
+          &:hover {
             background-color: $main_color;
             color: $white;
           }
@@ -56,51 +78,149 @@
       }
     }
     // For Srvices And Customers
-    .cutomer_service_dropdown_wrapper{
-      .service_cutomer_btn{
+    .cutomer_service_dropdown_wrapper {
+      .service_cutomer_btn {
         display: flex;
         gap: 3px;
-        &::after{
+        &::after {
           display: none !important;
         }
-        .arrow_active{
+        .arrow_active {
           display: none;
         }
-        .arrow_not_active{
+        .arrow_not_active {
           display: block;
         }
-        &.show{
-          .arrow_not_active{
+        &.show {
+          .arrow_not_active {
             display: none;
           }
-          .arrow_active{
+          .arrow_active {
             display: block;
           }
         }
       }
-      .cutomer_service_dropdown{
+      .cutomer_service_dropdown {
         border: none;
         border-radius: 10px;
-       
-        
-        .dropdown-item{
+        .dropdown-item {
           transition: $transiton;
-          &:hover{
+          &:hover {
             background-color: $main_color;
             color: $white;
           }
         }
       }
+      // For Service Dropdown
+      .service_dropdown {
+        border: none;
+        border-radius: 10px;
+        min-width: 350px;
+        width: fit-content;
+        @media #{$smMedia} {
+       
+          min-width: 300px;
+          width: 300px;
+        }
+        .dropdown-item {
+          transition: $transiton;
+          &:hover {
+            background-color: $white;
+          }
+          .accordion {
+            .accordion-item {
+              border: none;
+              .accordion-button {
+                background-color: transparent;
+                display: flex;
+                justify-content: space-between;
+                // min-width: 300px;
+                box-shadow: none;
+                color: $title_color;
+              
+                font-weight: 500;
+                padding: 10px 0;
+                text-transform: capitalize;
+                font-size: 16px;
+                @media (min-width:992px) and (max-width:1200px) {
+                  font-size: 13px;
+                }
+                &::after {
+                  display: none;
+                }
+                .img_show {
+                  display: block;
+                }
+                .img_hide {
+                  display: none;
+                }
+                &:not(.collapsed) {
+                  .img_show {
+                    display: none;
+                  }
+                  .img_hide {
+                    display: block;
+                  }
+                }
+              }
+              .accordion-body {
+                padding: 0;
+                .accordion_links {
+                  text-decoration: none;
+                  color: $title_text_color;
+                  padding: 10px;
+                  display: flex;
+                  align-items: center;
+                  gap: 5px;
+                  transition: $transiton;
+                  word-break: break-word;
+                  white-space: pre-line;
+                  font-size: 14px;
+                  @media (min-width:992px) and (max-width:1200px) {
+                    font-size: 13px;
+                  }
+                  .bullet {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    border: 2px solid $title_text_color;
+                    transition: $transiton;
+                  }
+                  &:hover {
+                    background-color: $main_color;
+                    color: $white;
 
+                    .bullet {
+                      border-color: $white;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
   // Nabar Toggler Button
-  .navbar-toggler{
-background-color: $main_color;
-box-shadow: none;
-outline: none;
-// .navbar-toggler-icon{
-
-// }
+  .navbar-toggler {
+    background-color: $main_color;
+    box-shadow: none;
+    outline: none;
+    width: 40px;
+    height: 35px;
+    padding: 7px;
+    .line{
+      height: 2px;
+      width: 100%;
+      background-color: $white;
+      &.line_1{
+        transform: translateY(-6px);
+      }
+      &.line_3{
+        transform: translateY(6px);
+      }
+    }
+    
   }
 }

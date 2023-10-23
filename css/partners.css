@@ -126,6 +126,7 @@ body {
 .main_app_header {
   background-image: url("../../images/icons/nav bar.png");
   background-size: cover;
+  background-color: #fff;
 }
 .main_app_header .main_nav_wrappr .navbar-nav {
   flex-grow: 1;
@@ -134,10 +135,26 @@ body {
 .main_app_header .main_nav_wrappr .navbar-nav .nav-item {
   padding: 0 5px;
 }
+@media (min-width: 992px) and (max-width: 1300px) {
+  .main_app_header .main_nav_wrappr .navbar-nav .nav-item {
+    padding: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  .main_app_header .main_nav_wrappr .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+}
 .main_app_header .main_nav_wrappr .navbar-nav .nav-item .nav-link {
   color: #333333;
   font-weight: 400;
   font-size: 16px;
+  padding: 0 5px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .main_app_header .main_nav_wrappr .navbar-nav .nav-item .nav-link {
+    font-size: 13px;
+  }
 }
 .main_app_header .main_nav_wrappr .navbar-nav .nav-item .nav-link.active {
   color: #2653AB;
@@ -154,14 +171,26 @@ body {
   color: #333333;
   text-decoration: none;
   gap: 5px;
+  font-size: 16px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .main_app_header .main_nav_wrappr .wrapper_contact_language .contact_link {
+    font-size: 13px;
+  }
 }
 .main_app_header .main_nav_wrappr .wrapper_contact_language .change_language_dropdown .language_btn {
   box-shadow: none;
   border-radius: 10px;
   background-color: rgba(40, 41, 62, 0.1);
+  font-size: 16px;
 }
 .main_app_header .main_nav_wrappr .wrapper_contact_language .change_language_dropdown .language_btn::after {
   display: none;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .main_app_header .main_nav_wrappr .wrapper_contact_language .change_language_dropdown .language_btn {
+    font-size: 13px;
+  }
 }
 .main_app_header .main_nav_wrappr .wrapper_contact_language .dropdown_menu_language {
   border: none;
@@ -171,6 +200,12 @@ body {
 .main_app_header .main_nav_wrappr .wrapper_contact_language .dropdown_menu_language .dropdown-item {
   transition: 0.5s all ease-in-out;
   text-align: center;
+  font-size: 16px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .main_app_header .main_nav_wrappr .wrapper_contact_language .dropdown_menu_language .dropdown-item {
+    font-size: 13px;
+  }
 }
 .main_app_header .main_nav_wrappr .wrapper_contact_language .dropdown_menu_language .dropdown-item:hover {
   background-color: #2653AB;
@@ -206,10 +241,110 @@ body {
   background-color: #2653AB;
   color: #fff;
 }
+.main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown {
+  border: none;
+  border-radius: 10px;
+  min-width: 350px;
+  width: fit-content;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown {
+    min-width: 300px;
+    width: 300px;
+  }
+}
+.main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown .dropdown-item {
+  transition: 0.5s all ease-in-out;
+}
+.main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown .dropdown-item:hover {
+  background-color: #fff;
+}
+.main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown .dropdown-item .accordion .accordion-item {
+  border: none;
+}
+.main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown .dropdown-item .accordion .accordion-item .accordion-button {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: none;
+  color: #333333;
+  font-weight: 500;
+  padding: 10px 0;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown .dropdown-item .accordion .accordion-item .accordion-button {
+    font-size: 13px;
+  }
+}
+.main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown .dropdown-item .accordion .accordion-item .accordion-button::after {
+  display: none;
+}
+.main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown .dropdown-item .accordion .accordion-item .accordion-button .img_show {
+  display: block;
+}
+.main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown .dropdown-item .accordion .accordion-item .accordion-button .img_hide {
+  display: none;
+}
+.main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown .dropdown-item .accordion .accordion-item .accordion-button:not(.collapsed) .img_show {
+  display: none;
+}
+.main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown .dropdown-item .accordion .accordion-item .accordion-button:not(.collapsed) .img_hide {
+  display: block;
+}
+.main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown .dropdown-item .accordion .accordion-item .accordion-body {
+  padding: 0;
+}
+.main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown .dropdown-item .accordion .accordion-item .accordion-body .accordion_links {
+  text-decoration: none;
+  color: #9B9B9B;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.5s all ease-in-out;
+  word-break: break-word;
+  white-space: pre-line;
+  font-size: 14px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown .dropdown-item .accordion .accordion-item .accordion-body .accordion_links {
+    font-size: 13px;
+  }
+}
+.main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown .dropdown-item .accordion .accordion-item .accordion-body .accordion_links .bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #9B9B9B;
+  transition: 0.5s all ease-in-out;
+}
+.main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown .dropdown-item .accordion .accordion-item .accordion-body .accordion_links:hover {
+  background-color: #2653AB;
+  color: #fff;
+}
+.main_app_header .main_nav_wrappr .cutomer_service_dropdown_wrapper .service_dropdown .dropdown-item .accordion .accordion-item .accordion-body .accordion_links:hover .bullet {
+  border-color: #fff;
+}
 .main_app_header .navbar-toggler {
   background-color: #2653AB;
   box-shadow: none;
   outline: none;
+  width: 40px;
+  height: 35px;
+  padding: 7px;
+}
+.main_app_header .navbar-toggler .line {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+}
+.main_app_header .navbar-toggler .line.line_1 {
+  transform: translateY(-6px);
+}
+.main_app_header .navbar-toggler .line.line_3 {
+  transform: translateY(6px);
 }
 
 .partners_wrapper {

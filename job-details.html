@@ -29,7 +29,9 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="d-block line line_1"></span>
+            <span class="d-block line line_2"></span>
+            <span class="d-block line line_3"></span>
           </button>
           <div
             class="collapse navbar-collapse main_nav_wrappr"
@@ -37,18 +39,21 @@
           >
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
+                <a class="nav-link" aria-current="page" href="index.html"
                   >Home</a
                 >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="index.html#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#ourTeam">Our Team</a>
+                <a class="nav-link" href="index.html#ourTeam">Our Team</a>
               </li>
-              <li class="nav-item dropdown cutomer_service_dropdown_wrapper">
+
+              <li
+                class="nav-item dropdown cutomer_service_dropdown_wrapper is_service_dropdown"
+              >
                 <a
                   class="nav-link dropdown-toggle service_cutomer_btn"
                   href="#"
@@ -70,23 +75,231 @@
                   />
                 </a>
                 <ul
-                  class="dropdown-menu cutomer_service_dropdown"
+                  class="dropdown-menu service_dropdown"
                   aria-labelledby="navbarDropdown"
                 >
                   <li>
-                    <a class="dropdown-item" href="services-details.html">
-                      Information Agenda Consulting
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="services-details.html"
-                      >Information Agenda Consulting</a
-                    >
+                    <div class="dropdown-item">
+                      <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button
+                              class="accordion-button"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne"
+                              aria-expanded="true"
+                              aria-controls="collapseOne"
+                            >
+                              <span>IM Consulting</span>
+                              <img
+                                src="images/icons/hide.png"
+                                class="img_hide"
+                                alt="hide"
+                              />
+                              <img
+                                src="images/icons/show.png"
+                                class="img_show"
+                                alt="show"
+                              />
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse show"
+                            aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion-body">
+                              <a
+                                href="services-details.html"
+                                class="accordion_links"
+                              >
+                                <span class="bullet"></span>
+                                <span class="text"
+                                  >Information Agenda Consulting</span
+                                >
+                              </a>
+                              <a
+                                href="services-details.html"
+                                class="accordion_links"
+                              >
+                                <span class="bullet"></span>
+                                <span class="text"
+                                  >ECM Consulting for both Structured</span
+                                >
+                              </a>
+                              <a
+                                href="services-details.html"
+                                class="accordion_links"
+                              >
+                                <span class="bullet"></span>
+                                <span class="text"
+                                  >Business Process Consulting
+                                </span>
+                              </a>
+                              <a
+                                href="services-details.html"
+                                class="accordion_links"
+                              >
+                                <span class="bullet"></span>
+                                <span class="text"
+                                  >Business Optimization for Organizations</span
+                                >
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="collapseTwo"
+                            >
+                              <span>Products/Services </span>
+                              <img
+                                src="images/icons/hide.png"
+                                class="img_hide"
+                                alt="hide"
+                              />
+                              <img
+                                src="images/icons/show.png"
+                                class="img_show"
+                                alt="show"
+                              />
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion-body">
+                              <a href="#" class="accordion_links">
+                                <span class="bullet"></span>
+                                <span class="text">Products/Services 1</span>
+                              </a>
+                              <a href="#" class="accordion_links">
+                                <span class="bullet"></span>
+                                <span class="text">Products/Services 2</span>
+                              </a>
+                              <a href="#" class="accordion_links">
+                                <span class="bullet"></span>
+                                <span class="text">Products/Services 3</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree"
+                              aria-expanded="false"
+                              aria-controls="collapseThree"
+                            >
+                              <span>Outsourcing</span>
+                              <img
+                                src="images/icons/hide.png"
+                                class="img_hide"
+                                alt="hide"
+                              />
+                              <img
+                                src="images/icons/show.png"
+                                class="img_show"
+                                alt="show"
+                              />
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion-body">
+                              <a href="#" class="accordion_links">
+                                <span class="bullet"></span>
+                                <span class="text">Outsourcing 1</span>
+                              </a>
+                              <a href="#" class="accordion_links">
+                                <span class="bullet"></span>
+                                <span class="text">Outsourcing 2</span>
+                              </a>
+                              <a href="#" class="accordion_links">
+                                <span class="bullet"></span>
+                                <span class="text">Outsourcing 3</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFour">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseFour"
+                              aria-expanded="false"
+                              aria-controls="collapseFour"
+                            >
+                              <span>Corporate Legal Consulting </span>
+                              <img
+                                src="images/icons/hide.png"
+                                class="img_hide"
+                                alt="hide"
+                              />
+                              <img
+                                src="images/icons/show.png"
+                                class="img_show"
+                                alt="show"
+                              />
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseFour"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion-body">
+                              <a href="#" class="accordion_links">
+                                <span class="bullet"></span>
+                                <span class="text"
+                                  >Corporate Legal Consulting 1</span
+                                >
+                              </a>
+                              <a href="#" class="accordion_links">
+                                <span class="bullet"></span>
+                                <span class="text"
+                                  >Corporate Legal Consulting 2</span
+                                >
+                              </a>
+                              <a href="#" class="accordion_links">
+                                <span class="bullet"></span>
+                                <span class="text"
+                                  >Corporate Legal Consulting 3</span
+                                >
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">Banking Consultancy</a>
+                <a class="nav-link" href="index.html#banking"
+                  >Banking Consultancy</a
+                >
               </li>
               <li class="nav-item dropdown cutomer_service_dropdown_wrapper">
                 <a
@@ -127,7 +340,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="jobs.html">jobs</a>
+                <a class="nav-link active" href="jobs.html">jobs</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="partners.html">partners</a>
@@ -135,7 +348,7 @@
             </ul>
             <!-- Language And Contact Us -->
             <div class="wrapper_contact_language">
-              <a href="#" class="contact_link">
+              <a href="#contact_us" class="contact_link">
                 <img src="images/icons/contact us.png" alt="contact" />
                 <span>Contact Us</span>
               </a>
@@ -251,7 +464,7 @@
       class="scroll_to_top"
       role="button"
     />
-    <footer class="main_app_footer">
+    <footer class="main_app_footer" id="contact_us">
       <div class="main_footer_content">
         <div class="container">
           <div class="get_in_touch">

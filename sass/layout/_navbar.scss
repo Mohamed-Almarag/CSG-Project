@@ -1,9 +1,106 @@
 // Style For Main Application Header - Navbar
-.main_app_header{
-  background-color: $white;
-  // box-shadow: 0 0 7px 5px rgba($black, 0.15);
-  // box-shadow: 0 2px 2px -2px rgba($black,.2);
-  background-image: url('../../images/icons/nav\ bar.png');
+.main_app_header {
+  // background-color: rgba($white, .5);
+  background-image: url("../../images/icons/nav\ bar.png");
   background-size: cover;
+  .main_nav_wrappr{
+    .navbar-nav{
+      flex-grow: 1;
+      justify-content: center;
+      .nav-item{
+        padding: 0 5px;
+        .nav-link{
+          color: $title_color;
+          font-weight: 400;
+          font-size: 16px;
+          &.active{
+            color: $main_color;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .wrapper_contact_language {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .contact_link{
+        display: flex;
+        align-items: center;
+        color: $title_color;
+        text-decoration: none;
+        gap: 5px;
+      }
+      .change_language_dropdown{
+        .language_btn{
+          box-shadow: none;
+          border-radius: 10px;
+          background-color: rgba($case_bg_color, 0.1);
+          &::after{
+            display: none;
+          }
+        }
+      }
+      .dropdown_menu_language{
+        border: none;
+        min-width: 5rem;
+        border-radius: 10px;
+        .dropdown-item{
+          transition: $transiton;
+          text-align: center;
+          &:hover{
+            background-color: $main_color;
+            color: $white;
+          }
+        }
+      }
+    }
+    // For Srvices And Customers
+    .cutomer_service_dropdown_wrapper{
+      .service_cutomer_btn{
+        display: flex;
+        gap: 3px;
+        &::after{
+          display: none !important;
+        }
+        .arrow_active{
+          display: none;
+        }
+        .arrow_not_active{
+          display: block;
+        }
+        &.show{
+          .arrow_not_active{
+            display: none;
+          }
+          .arrow_active{
+            display: block;
+          }
+        }
+      }
+      .cutomer_service_dropdown{
+        border: none;
+        border-radius: 10px;
+       
+        
+        .dropdown-item{
+          transition: $transiton;
+          &:hover{
+            background-color: $main_color;
+            color: $white;
+          }
+        }
+      }
 
+    }
+  }
+  // Nabar Toggler Button
+  .navbar-toggler{
+background-color: $main_color;
+box-shadow: none;
+outline: none;
+// .navbar-toggler-icon{
+
+// }
+  }
 }

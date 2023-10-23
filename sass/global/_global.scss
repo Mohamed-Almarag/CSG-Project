@@ -117,7 +117,23 @@ body {
 }
 
 
-// media
-//   @media #{$navbartoggler} {
-//     color: red;
-//   }
+
+.google_map_wrapper{
+  padding-bottom: $main_padding ;
+  .our_location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding:0 50px;
+    @media #{$meduim} {
+      padding:0 ;
+    }
+    @media #{$tabletMedia} {
+      margin-top: 20px;
+    }
+    .img{
+      margin-bottom: 30px;
+    }
+  }
+}

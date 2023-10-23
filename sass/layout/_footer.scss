@@ -12,6 +12,9 @@
       font-size: 36px;
       font-weight: bold;
       margin-bottom: 5px;
+      @media #{$smMedia} {
+        font-size: 30px;
+      }
       &.contact_title{
         color: $second_color;
         font-size: 25px;
@@ -51,19 +54,9 @@
         }
         .form_action{
           display: flex;
-          justify-content: space-between;
+          justify-content: end;
           margin-top: 10px;
-          .write_answer{
-            color: $white;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            .the_question{
-              display: flex;
-              align-items: center;
-              gap: 10px;
-            }
-          }
+          
         }
       }
       input[type="number"]::-webkit-outer-spin-button,
@@ -72,6 +65,7 @@
       }
       .submit_button{
         min-width: 150px;
+        height: 48px;
         display: flex;
         gap: 5px;
         justify-content: center;
@@ -81,9 +75,15 @@
         color: $white;
         border: 1px solid $main_color;
         border-radius: $radius;
+
       }
       // Contact Us
       .contacts{
+        @media #{$meduim} {
+          margin-top: 30px;
+        }
+        
+
      .info_list{
      
       .info_item{
@@ -112,7 +112,7 @@
     padding: 20px 0;
     gap: 10px;
     color: $footer_color;
-    
+    flex-wrap: wrap;
     .website_link{
       color: $main_color;
       font-weight: 500;

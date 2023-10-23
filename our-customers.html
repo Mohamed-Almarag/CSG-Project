@@ -30,39 +30,101 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            class="collapse navbar-collapse main_nav_wrappr"
+            id="navbarSupportedContent"
+          >
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html"
                   >Home</a
                 >
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item">
+                <a class="nav-link" href="#ourTeam">Our Team</a>
+              </li>
+              <li class="nav-item dropdown cutomer_service_dropdown_wrapper">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle service_cutomer_btn"
                   href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Our Services
+                  <span>Our Services</span>
+                  <img
+                    src="images/icons/arrow.png"
+                    alt="arrow"
+                    class="arrow_not_active"
+                  />
+                  <img
+                    src="images/icons/arrow active.png"
+                    alt="arrow"
+                    class="arrow_active"
+                  />
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
+                <ul
+                  class="dropdown-menu cutomer_service_dropdown"
+                  aria-labelledby="navbarDropdown"
+                >
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="services-details.html">
+                      Information Agenda Consulting
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="services-details.html"
+                      >Information Agenda Consulting</a
+                    >
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="our-customers.html">Our Customers</a>
+                <a class="nav-link" href="#about">Banking Consultancy</a>
               </li>
+              <li class="nav-item dropdown cutomer_service_dropdown_wrapper">
+                <a
+                  class="nav-link dropdown-toggle service_cutomer_btn"
+                  href="#"
+                  id="navbarDropdownCustomers"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span>Our Customers</span>
+                  <img
+                    src="images/icons/arrow.png"
+                    alt="arrow"
+                    class="arrow_not_active"
+                  />
+                  <img
+                    src="images/icons/arrow active.png"
+                    alt="arrow"
+                    class="arrow_active"
+                  />
+                </a>
+                <ul
+                  class="dropdown-menu cutomer_service_dropdown"
+                  aria-labelledby="navbarDropdownCustomers"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#ourCustomers"
+                      >Our Customers</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="our-customers.html"
+                      >Case Studies</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="jobs.html">jobs</a>
               </li>
@@ -70,6 +132,36 @@
                 <a class="nav-link" href="partners.html">partners</a>
               </li>
             </ul>
+            <!-- Language And Contact Us -->
+            <div class="wrapper_contact_language">
+              <a href="#" class="contact_link">
+                <img src="images/icons/contact us.png" alt="contact" />
+                <span>Contact Us</span>
+              </a>
+              <div class="dropdown change_language_dropdown">
+                <button
+                  class="btn dropdown-toggle language_btn"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="images/icons/language.png" alt="language" />
+                  <span>EN</span>
+                </button>
+                <ul
+                  class="dropdown-menu dropdown_menu_language"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li>
+                    <span class="d-block dropdown-item" role="button">EN</span>
+                  </li>
+                  <li>
+                    <span class="d-block dropdown-item" role="button">AR</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -85,7 +177,7 @@
         </div>
         <div class="all_case_studies">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6">
               <div class="every_case">
                 <div class="image_wrapper">
                   <img src="images/pages/case1.png" alt="case" class="img" />
@@ -106,7 +198,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6">
               <div class="every_case">
                 <div class="image_wrapper">
                   <img src="images/pages/case2.png" alt="case" class="img" />
@@ -127,7 +219,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6">
               <div class="every_case">
                 <div class="image_wrapper">
                   <img src="images/pages/case3.png" alt="case" class="img" />
@@ -148,7 +240,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6">
               <div class="every_case">
                 <div class="image_wrapper">
                   <img src="images/pages/case1.png" alt="case" class="img" />
@@ -169,7 +261,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6">
               <div class="every_case">
                 <div class="image_wrapper">
                   <img src="images/pages/case2.png" alt="case" class="img" />
@@ -190,7 +282,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6">
               <div class="every_case">
                 <div class="image_wrapper">
                   <img src="images/pages/case3.png" alt="case" class="img" />
@@ -217,7 +309,46 @@
     </section>
     <!-- End Case Studies -->
 
-    <!-- // Start Footer -->
+    <!-- Google Map -->
+    <section class="google_map_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-12">
+            <div class="main_google_wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55251.33663472039!2d31.21726458832192!3d30.05955631696473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1697991202084!5m2!1sen!2seg"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="our_location text-center">
+              <div>
+                <img
+                  src="images/icons/locations.png"
+                  class="img"
+                  alt="locations"
+                />
+                <div class="main_app_section_title what_we_do">
+                  <h2 class="title">Our Location</h2>
+                  <p class="text_title">
+                    Reach us from our location on the map
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Google Map -->
+
+    <!--  Start Footer -->
     <img
       src="images/icons/top.png"
       alt=""
@@ -237,7 +368,7 @@
           <!-- Start Footer Form -->
           <div class="footer_content">
             <div class="row">
-              <div class="col-md-8">
+              <div class="col-lg-8 col-sm-12">
                 <form class="footer_form">
                   <div class="row">
                     <div class="col-md-6">
@@ -291,22 +422,6 @@
                     </div>
                   </div>
                   <div class="form_action">
-                    <div class="write_answer">
-                      <span class="d-block text-uppercase"
-                        >Write Your Answer
-                      </span>
-                      <div class="the_question">
-                        <div>
-                          <span>1</span>
-                          <span>+</span>
-                          <span>4</span>
-                          <span>=</span>
-                        </div>
-                        <div class="input_wrapper for_answer">
-                          <input required class="form_input" type="text" />
-                        </div>
-                      </div>
-                    </div>
                     <button class="submit_button text-uppercase">
                       <img src="images/icons/send.png" alt="send" />
                       <span>send</span>
@@ -314,7 +429,7 @@
                   </div>
                 </form>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-sm-12">
                 <div class="contacts">
                   <h6 class="title contact_title text-capitalize">
                     Contact Us

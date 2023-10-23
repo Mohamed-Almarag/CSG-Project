@@ -1,15 +1,92 @@
 // Start Hero Section
 .hero_section_wrapper {
-  // background-image: url('../../images/pages/header.png');
   height: 100vh;
   position: relative;
-  // background-size: cover;
-  .img {
-    max-height: 100%;
-  }
   display: flex;
   justify-content: center;
   align-items: center;
+  .img_wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    .img {
+      max-height: 100%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .csg_hero_slider {
+    @media (min-width: 1200px) {
+      width: 48%;
+    }
+    @media (min-width: 991px) and (max-width: 1200px) {
+      width: 70%;
+    }
+    @media #{$meduim} {
+      width: 100%;
+    }
+    .every_card {
+      .title {
+        color: $main_color;
+        line-height: 46px;
+        font-size: 42px;
+        font-weight: bold;
+        @media (min-width: 1200px) {
+          font-size: 42px;
+        }
+        @media (min-width: 991px) and (max-width: 1200px) {
+          font-size: 35px;
+        }
+        @media #{$meduim} {
+          font-size: 20px;
+        }
+        
+      }
+      .description {
+        color: $title_text_color;
+        line-height: $main_line_height - 7px;
+        margin: 20px 0 30px;
+        max-width: 85%;
+        @media #{meduim} {
+          max-width: 100%;
+        }
+      }
+    }
+    .slick-dots {
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      gap: 5px;
+      bottom: -70px;
+    }
+    .slick-dots li {
+      width: 20px;
+    }
+    .slick-dots li button {
+      width: 20px;
+    }
+    .slick-dots li button:before {
+      width: 20px;
+      height: 7px;
+      border-radius: 10px;
+      background: $second_color;
+      opacity: 0.5;
+      content: "";
+    }
+    .slick-dots li {
+      &.slick-active {
+        width: 30px;
+        button {
+          width: 30px;
+        }
+        button:before {
+          width: 30px;
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
 // End Hero Section
 
@@ -23,6 +100,14 @@
       max-width: 475px;
       width: 100%;
       max-height: 444px;
+      transition: $transiton;
+    }
+    &:hover{
+      .img{
+        
+        transform: translateY(-10px);
+        filter: brightness(.8);
+      }
     }
   }
   .about_content {
@@ -48,20 +133,33 @@
     align-items: center;
     gap: 30px;
     min-height: 200px;
-    .title {
-      color: $title_color;
-      font-weight: bold;
-      font-size: 20px;
-      margin-bottom: 10px;
-      &.with_color {
-        color: $main_color;
-      }
+    @media #{$meduim} {
+      text-align: center;
+      flex-wrap: wrap;
+      justify-content: center;
     }
-    .dexcription {
-      line-height: $main_line_height;
-      font-size: $p_font_size;
-      margin: 0;
-      color: $bg_color;
+    @media #{$smMedia} {
+      padding: 10px;
+    }
+    .content{
+      @media #{$meduim} {
+        text-align: center;
+      }
+      .title {
+        color: $title_color;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10px;
+        &.with_color {
+          color: $main_color;
+        }
+      }
+      .dexcription {
+        line-height: $main_line_height;
+        font-size: $p_font_size;
+        margin: 0;
+        color: $bg_color;
+      }
     }
   }
 }
@@ -74,10 +172,15 @@
   background-image: url("../../images/icons/team.png");
   background-size: cover;
   background-repeat: no-repeat;
-  // background-attachment: fixed;
+  @media #{$meduim} {
+    background: $main_color;
+  }
   .all_team_members {
     margin-top: 50px;
+    
     .team_card {
+      transition: $transiton;
+      padding: 30px 0 20px 0;
       .img_wrapper {
         display: flex;
         justify-content: center;
@@ -85,6 +188,7 @@
         position: relative;
         .dashed_border {
           position: absolute;
+          transition: $transiton;
         }
         .member_img {
           display: block;
@@ -112,6 +216,14 @@
           color: rgba($white, 0.7);
         }
       }
+      &:hover{
+        background-color: rgba($title_color, 0.5);
+        border-radius: 15px;
+        .dashed_border{
+          // transform: rotate(360deg);
+          animation: rotation linear 3s infinite ;
+        }
+      }
     }
   }
 }
@@ -131,7 +243,9 @@
         color: $tabs_color;
         border-radius: 5px;
         transition: $transiton;
-
+        @media #{$smMedia} {
+          min-width: 252px;
+        }
         &.active,
         &:hover {
           background-color: $second_color;
@@ -145,17 +259,19 @@
     margin-top: 30px;
     .all_services_cards {
       .every_service {
-        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
         padding: 10px;
         border-radius: 10px;
         transition: $transiton;
-        .img_wrapper{
-          .img{
-            width: 262px;
-            height: 202px;
+        margin-bottom: 20px;
+        .img_wrapper {
+          .img {
+            width: 100%;
+            height: 220px;
             display: block;
             margin: auto;
             transition: $transiton;
+            max-width: 100%;
           }
         }
         .content {
@@ -175,12 +291,12 @@
             color: $title_text_color;
           }
         }
-        &:hover{
-          // background-color: $arrow_bg_color;
+        &:hover {
           box-shadow: $shadow;
-          .img_wrapper{
-            .img{
+          .img_wrapper {
+            .img {
               filter: brightness(0.85);
+              
             }
           }
         }
@@ -195,7 +311,27 @@
   padding-bottom: $main_padding;
   .banking_content {
     margin-top: 30px;
+    .img_wrapping{
+      @media #{$meduim} {
+        display: flex;
+        justify-content: center;
+      }
+      .img{
+        max-width: 100%;
+        transition: $transiton;
+      }
+      &:hover{
+        .img{
+          
+          transform: translateY(-10px);
+          filter: brightness(.8);
+        }
+      }
+    }
     .content {
+      @media #{$meduim} {
+        margin-top: 30px;
+      }
       .title {
         color: $title_color;
         font-weight: bold;
@@ -229,6 +365,66 @@
 }
 // End Banking Consultancy
 
+// Start Customers
+.main_customers_wrapper {
+  padding-bottom: $main_padding;
+  .csg_customers_slider {
+    .responsive {
+      .slick-list {
+        padding: 40px 0;
+      }
+      .every_customer {
+        .img_wrapper {
+          padding: 30px 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 300px;
+          margin: auto;
+          border-radius: 29px;
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          cursor: grab;
+          transition: $transiton;
+          @media (min-width:1200px) and (max-width: 1300px) {
+            width: 250px;
+          }
+          &:hover {
+            box-shadow: $shadow;
+          }
+        }
+        .img {
+          width: 202px;
+          height: 93px;
+          border-radius: 29px;
+        }
+      }
+    }
+    .slick-prev{
+     
+      left: calc(50% - 38px);
+    }
+    .slick-next {
+      
+      right: calc(50% - 38px);
+    }
+    .slick-arrow{
+      padding: 5px;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $main_color;
+      top: 100%;
+      &::before{
+        font-size: 16px;
+      }
+    }
+  }
+}
+// End Customers
+
 // Start Case Studies
 .case_studies_wrapper {
   padding-bottom: $main_padding;
@@ -242,6 +438,7 @@
       border-radius: 32px;
       width: 400px;
       margin: 0 auto 30px;
+      max-width: 100%;
       .image_wrapper {
         overflow: hidden;
         .img {
@@ -301,6 +498,9 @@
       gap: 20px;
       min-height: 170px;
       margin-bottom: 30px;
+      @media #{$smMedia} {
+        flex-wrap: wrap;
+      }
       .job_icon {
         background-color: rgba($main_color, 0.2);
         padding: 10px 20px;
@@ -339,7 +539,7 @@
             align-items: center;
             justify-content: center;
             padding: 5px;
-            background-color: $arrow_bg_color;
+            background-color: rgba($main_color, 0.4);
             transition: $transiton;
             &:hover {
               background-color: $main_color;
@@ -356,12 +556,16 @@
 .partners_wrapper {
   padding: $main_padding 0;
   .all_partners {
-    margin: 30px 0;
-
+    margin-bottom: 30px ;
     .every_partner {
       display: flex;
       align-items: center;
       gap: 20px;
+      margin-top: 30px;
+      @media #{$tabletMedia} {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
       .img {
         width: 180px;
         height: 180px;
@@ -388,3 +592,13 @@
   }
 }
 // End Partners
+
+
+@keyframes rotation {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(180deg);
+  }
+}

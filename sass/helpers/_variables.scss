@@ -26,4 +26,6 @@ $box-shadow: 0 1px 12px rgba($black, 0.4);
 $shadow:0 2px 17px 0 rgba($black, .1);
 
 // Media And Responsive Variables
-$navbartoggler: "(min-width: 320px) and (max-width: 991px)";
+$smMedia: "(min-width: 320px) and (max-width: 480px)";
+$tabletMedia: "(min-width: 320px) and (max-width: 767px)";
+$meduim: "(min-width: 320px) and (max-width: 991px)";

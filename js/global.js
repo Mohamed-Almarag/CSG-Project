@@ -36,3 +36,20 @@ navbarItemsLinks.forEach(element => {
 
 
 
+let navbarLinksWithForSpecificSection = document.querySelectorAll('.main_app_header .navbar-nav .nav-item .nav-link');
+
+navbarLinksWithForSpecificSection.forEach(element => {
+  element.onclick = ()=>{
+    let navbarCollapse = document.querySelector(".navbar-collapse")
+    if (element.classList.contains('link_for_specific_section')) {
+      
+      if (navbarCollapse.classList.contains('show')) {
+      navbarCollapse.classList.remove('show');
+    }
+    }
+    
+  }
+
+});
+
+
